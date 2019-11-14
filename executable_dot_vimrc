@@ -1,0 +1,472 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" to uppdate 
+" :source %
+" :PluginInstall
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Sytaxhighligting`
+"Plugin 'octol/vim-cpp-enhanced-highlight'
+" Plugin 'bfrg/vim-cpp-enhanced-highlight'
+Plugin 'vim-syntastic/syntastic'
+
+"add you complete me
+Plugin 'Valloric/YouCompleteMe'
+
+"tabstuff
+Plugin 'grizzlysmit/tabstuff.vim'
+
+" Rust syntax etc
+Plugin 'rust-lang/rust.vim'
+" Toml syntax
+Plugin 'cespare/vim-toml'
+
+" statusline colouring and themes 
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" C/C++ language support
+"Plugin 'c.vim'
+Plugin 'WolfgangMehner/c-support'
+
+" Perl language support
+Plugin 'wolfgangmehner/perl-support'
+
+" WolfgangMehner/git-support
+Plugin 'WolfgangMehner/git-support'
+
+" WolfgangMehner/lua-support
+Plugin 'WolfgangMehner/lua-support'
+
+" WolfgangMehner/vim-support
+Plugin 'WolfgangMehner/vim-support'
+
+" WolfgangMehner/latex-support
+Plugin 'WolfgangMehner/latex-support'
+
+" WolfgangMehner/awk-support
+Plugin 'WolfgangMehner/awk-support'
+
+" WolfgangMehner/python-support
+Plugin 'WolfgangMehner/python-support'
+
+" WolfgangMehner/vim-do
+Plugin 'WolfgangMehner/vim-do'
+
+" WolfgangMehner/matlab-support
+" Plugin 'WolfgangMehner/matlab-support'
+
+" bash support
+Plugin 'WolfgangMehner/bash-support'
+
+" shell indent support
+Plugin 'sh.vim'
+
+" Latex support
+Plugin 'latex-box-team/latex-box'
+
+" NerdTree File Browser
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'mercury-language/mercury'
+
+
+" Julia support
+Plugin 'JuliaEditorSupport/julia-vim'
+
+" Elvish support
+Plugin 'dmix/elvish.vim'
+
+" AsyncRun support
+Plugin 'skywind3000/asyncrun.vim'
+
+" cmake support
+Plugin 'vhdirk/vim-cmake'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+"
+" set up youcomplete me for C++
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+" let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+" syntax Highligting
+" Highlighting of class scope is disabled by default. To enable set
+" let g:cpp_class_scope_highlight = 1
+" Highlighting of member variables is disabled by default. To enable set
+"let g:cpp_member_variable_highlight = 1
+" Highlighting of class names in declarations is disabled by default. To enable set
+"let g:cpp_class_decl_highlight = 1
+" There are two ways to hightlight template functions. Either
+"let g:cpp_experimental_simple_template_highlight = 1
+" which works in most cases, but can be a little slow on large files. Alternatively set
+" let g:cpp_experimental_template_highlight = 1
+" Highlighting of member variable names is enabled by setting
+" let g:cpp_experimental_template_highlight = 1
+" To enable highlighting of C++ library concepts, set
+" let g:cpp_concepts_highlight = 1
+" Highlighting of user defined functions can be disabled by
+"let g:cpp_no_function_highlight = 1
+" 
+" Vim tends to a have issues with flagging braces inside brackets as invalid syntax such as in the following example:
+"  std::map<std::pair<int, int>, int> m;
+"  m[{1, 2}] = 3;
+"  As a workaround set
+" let c_no_curly_error=1
+" Syntactic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+" set statusline+=%*gbar
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:ycm_register_as_syntastic_checker=0
+" let g:ycm_filepath_completion_use_working_dir=1
+
+" vim-airline
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_theme='simple'
+let g:airline_left_sep='>'
+let g:airline_right_sep='<'
+let g:airline_detect_spelllang=1
+
+" vim c-support
+let g:C_FormatDate            = '%A %Y-%m-%d'
+let g:C_FormatTime            = '%H:%M:%S'
+let g:C_FormatYear            = '%Y'
+
+" Gostuff
+
+let g:C_MapLeader="\\"
+
+" NERDTree
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+let NERDTreeShowHidden=1
+
+" latex-support stuff
+
+let g:Latex_PdfViewer = 'okular'
+
+" general stuff
+"set nocompatible
+"set nrformats+=alpha
+
+
+"set background=light
+"if has("terminfo")
+"   set t_Co=8
+"   set t_Sf=[3%p1%dm
+"   set t_Sb=[4%p1%dm
+"else
+"   set t_Co=8
+"   set t_Sf=[3%dm
+"   set t_Sb=[4%dm
+"endif
+set cinoptions=Ns
+
+filetype on
+filetype plugin on
+syntax on
+syntax enable
+if has("multi_byte")
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+endif
+set modeline
+
+set nocp
+" syntax enable
+let mercury_highlight_full_comment = 1
+let mercury_no_highlight_overlong = 1
+":hi ErrorMsg ctermbg=6
+:set expandtab
+:set encoding=utf-8 fileencodings=
+set hls is
+
+"Syntax highlighting only for enhanced-vi
+"if has("mouse_gpm") && filereadable("/usr/share/vim/syntax/syntax.vim")
+"  syntax on
+"endif
+
+"Set a statusbar
+"set statusline=~
+set laststatus=2 statusline= title 
+
+set dictionary+=/usr/share/dict/words
+set complete+=k
+
+
+"I know it's horrible for a vi master but useful for newbies.
+"imap <C-a> <Esc>I
+"imap <C-e> <ESC>A
+"map <C-Tab> <C-W>w
+"imap <C-Tab> <C-O><C-W>w
+"cmap <C-Tab> <C-C><C-Tab>
+
+"Some macros to manage the buffer of vim
+"map <F5> :bp<C-M>
+"map <F6> :bn<C-M>
+"map <F7> :bd<C-M>
+
+"Default backspace like normal
+set bs=2
+
+"Terminal for 80 char ? so vim can play till 79 char.
+"set textwidth=79
+
+"Some option desactivate by default (remove the no).
+"set nobackup
+"set nohlsearch
+"set noincsearch
+
+"Display a status-bar.
+"set laststatus=2
+
+"Show the position of the cursor.
+set ruler
+
+"no wrap
+"set nowrap
+
+"Show matching parenthese.
+set showmatch
+
+"" Gzip and Bzip2 files support
+" Take from the Debian package and the exemple on $VIM/vim_exemples
+"if has("autocmd")
+
+" Set some sensible defaults for editing C-files
+"augroup cprog
+"  " Remove all cprog autocommands
+"  au!
+"
+"  " When starting to edit a file:
+"  "   For *.c and *.h files set formatting of comments and set C-indenting on.
+"  "   For other files switch it off.
+"  "   Don't change the order, it's important that the line with * comes first.
+"  autocmd BufRead * set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,://
+"  "autocmd BufRead *       set formatoptions=tcql nocindent comments&
+"  autocmd BufRead *.c,*.h set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,://
+"augroup END
+
+" autocmd BufNewFile,BufRead *.cpp,*.cxx,*.c++,*.hpp,*.hxx,*.h++ set syntax=cpp11 formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,://
+" autocmd BufNewFile,BufRead *.pl,*.pm set cindent
+
+" Also, support editing of gzip-compressed files. DO NOT REMOVE THIS!
+" This is also used when loading the compressed helpfiles.
+
+augroup perl6
+  " Remove all cprog autocommands
+  au!
+
+  autocmd BufRead *.p6,pl6,*.pm6 setlocal iskeyword+=-
+  autocmd BufRead *.p6,pl6,*.pm6 set cindent
+augroup END
+
+"augroup gzip
+  " Remove all gzip autocommands
+"  au!
+
+  " Enable editing of gzipped files
+  "	  read:	set binary mode before reading the file
+  "		uncompress text in buffer after reading
+  "	 write:	compress file after writing
+  "	append:	uncompress file, append, compress file
+"  autocmd BufReadPre,FileReadPre	*.gz set bin
+"  autocmd BufReadPre,FileReadPre	*.gz let ch_save = &ch|set ch=2
+"  autocmd BufReadPost,FileReadPost	*.gz '[,']!gunzip
+"  autocmd BufReadPost,FileReadPost	*.gz set nobin
+"  autocmd BufReadPost,FileReadPost	*.gz let &ch = ch_save|unlet ch_save
+"  autocmd BufReadPost,FileReadPost	*.gz execute ":doautocmd BufReadPost " . %:r
+
+"  autocmd BufWritePost,FileWritePost	*.gz !mv <afile> <afile>:r
+"  autocmd BufWritePost,FileWritePost	*.gz !gzip <afile>:r
+
+"  autocmd FileAppendPre			*.gz !gunzip <afile>
+"  autocmd FileAppendPre			*.gz !mv <afile>:r <afile>
+"  autocmd FileAppendPost		*.gz !mv <afile> <afile>:r
+"  autocmd FileAppendPost		*.gz !gzip <afile>:r
+"augroup END
+
+"augroup bzip2
+  " Remove all bzip2 autocommands
+"  au!
+
+  " Enable editing of bzipped files
+  "       read: set binary mode before reading the file
+  "             uncompress text in buffer after reading
+  "      write: compress file after writing
+  "     append: uncompress file, append, compress file
+"  autocmd BufReadPre,FileReadPre        *.bz2 set bin
+"  autocmd BufReadPre,FileReadPre        *.bz2 let ch_save = &ch|set ch=2
+"  autocmd BufReadPost,FileReadPost      *.bz2 set cmdheight=2|'[,']!bunzip2
+"  autocmd BufReadPost,FileReadPost      *.bz2 set cmdheight=1 nobin|execute ":doautocmd BufReadPost " . %:r
+"  autocmd BufReadPost,FileReadPost      *.bz2 let &ch = ch_save|unlet ch_save
+"
+"  autocmd BufWritePost,FileWritePost    *.bz2 !mv <afile> <afile>:r
+"  autocmd BufWritePost,FileWritePost    *.bz2 !bzip2 <afile>:r
+"
+"  autocmd FileAppendPre                 *.bz2 !bunzip2 <afile>
+"  autocmd FileAppendPre                 *.bz2 !mv <afile>:r <afile>
+"  autocmd FileAppendPost                *.bz2 !mv <afile> <afile>:r
+"  autocmd FileAppendPost                *.bz2 !bzip2 -9 --repetitive-best <afile>:r
+"augroup END
+"
+"endif " has ("autocmd")
+" au FileType python source ~/.vim/scripts/python.vim
+" au FileType python source /usr/share/vim/vim74/indent/python.vim
+" au FileType python source /usr/share/vim-scripts/indent/python.vim
+" au FileType python source /usr/share/vim/vim74/syntax/python.vim
+" au FileType python source $VIMRUNTIME/indent/python.vim
+" au FileType python source $VIMRUNTIME/syntax/python.vim
+" au   BufEnter *   execute ":lcd " . expand("%:p:h")
+menu Edit.Fileformat.unix :set fileformat=unix<cr>:w<cr>
+menu Edit.Fileformat.dos :set fileformat=dos<cr>:w<cr>
+menu Edit.Fileformat.mac :set fileformat=mac<cr>:w<cr>
+":set mouse=a
+":set mousemodel=popup
+"let mapleader="\\"
+set ignorecase smartcase
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+"set autoindent
+"set cindent
+"set smarttab
+":inoremap # X#
+"set cursorline
+
+"map <F2> :echo 'Current time is ' . strftime('%Y-%m-%d %T %A %d %B')<CR>
+"imap <F3> <C-R>=strftime('%Y-%m-%d %T %A %d %B')<CR>
+"nmap <F3> a<C-R>=strftime('%Y-%m-%d %T %A %d %B')<CR><Esc>
+"cmap <F4> %s/
+"nmap <F4> :%s/
+"vmap <F4> :s/
+"inoremap <F5> <C-R>=expand('%:p:h')<CR>
+"vnoremap qq <Esc>`>a'<Esc>`<i'<Esc>
+"vnoremap QQ <Esc>`>a"<Esc>`<i"<Esc>
+"vnoremap <C-F10> <Esc>:'<,'>s@\m^\([ 	]*\)@\1//@g<CR>
+"vnoremap <C-F11> <Esc>:'<,'>s/\m^\([ 	]*\)/\1#/g<CR>
+"vnoremap <C-F12> <Esc>:'<,'>s/\m^\([ 	]*\)/\1# /g<CR>
+"vnoremap <S-F10> <Esc>:'<,'>s@\m^\([ 	]*\)//@\1@g<CR>
+"vnoremap <S-F11> <Esc>:'<,'>s/\m^\([ 	]*\)#/\1/g<CR>
+"vnoremap <S-F12> <Esc>:'<,'>s/\m^\([ 	]*\)# /\1/g<CR>
+"vnoremap <C-F9> <Esc>`>a*/<Esc>`<i/*<Esc>
+"vnoremap <S-F9> <Esc>`>o//*/<Esc>`<O/*<Esc>
+"vnoremap g/ y/<C-R>"<CR>
+
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplMapWindowNavArrows = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1
+"let g:miniBufExplModSelTarget = 1
+
+" MiniBufExpl Colors
+"hi MBEVisibleActive guifg=#A6DB29 guibg=fg
+"hi MBEVisibleChangedActive guifg=#F1266F guibg=fg
+"hi MBEVisibleChanged guifg=#F1266F guibg=fg
+"hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
+"hi MBEChanged guifg=#CD5907 guibg=fg
+"hi MBENormal guifg=#808080 guibg=fg
+
+
+set cinkeys-=0#
+set indentkeys-=0#
+set number
+
+" C/C++ supoort stuff
+let g:C_CFlags = '-Wall -std=c++11'
+let g:C_LFlags = '-Wall'
+let g:C_Libs = ''
+"let g:C_FormatDate = '%A %Y-%m-%d'
+"let g:C_FormatTime = '%H:%M:%S'
+" end C/C++ supoort stuff
+" Bash support
+"let g:BASH_FormatDate = '%A %Y-%m-%d'
+"let g:BASH_FormatTime = '%H:%M:%S'
+"let g:BASH_FormatYear = '%Y'
+" end Bash support
+filetype plugin on
+set modeline
+"source ~/.vim/ftplugin/c.vim
+
+"enable matchit support
+runtime macros/matchit.vim
+
+"let g:julia_blocks_mappings = {
+"                    \  "move_n" : "]j",
+"                    \  "move_N" : "]J",
+"                    \  "move_p" : "[j",
+"                    \  "move_P" : "[J",
+"                    \
+"                    \  "moveblock_n" : "]]",
+"                    \  "moveblock_N" : "][",
+"                    \  "moveblock_p" : "[[",
+"                    \  "moveblock_P" : "[]",
+"                    \
+"                    \  "select_a" : "aj",
+"                    \  "select_i" : "ij",
+"                    \
+"                    \  "whereami" : "",
+"                    \  }
+"
+"let g:julia_blocks = 1
+
+set undolevels=4000
+if exists('+undoreload')  | set undoreload=100000    | endif
+
+
+if has('persistent_undo')
+  " Make sure that the directory ~/.UNDO exists
+  " for persistent undo to work.
+  set undodir=~/.UNDO
+  set undofile
+endif

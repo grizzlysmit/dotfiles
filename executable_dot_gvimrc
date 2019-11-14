@@ -1,0 +1,72 @@
+set tabpagemax=60
+
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/open-in-tabs.xpm 1.15 ToolBar.OpenInNewTab :browse tabnew<cr>
+"tmenu ToolBar.OpenInNewTab Open In New Tab
+"amenu 1.281 ToolBar.-TabSep- :
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/arrow-left-double.xpm 1.282 ToolBar.TabFirst :tabfirst<cr>
+"tmenu ToolBar.TabFirst Goto First Tab
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/arrow-right.xpm 1.283 ToolBar.TabNext :tabnext<cr>
+"tmenu ToolBar.TabNext Goto Next Tab 
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/arrow-left.xpm 1.284 ToolBar.TabPrevious :tabprevious<cr>
+"tmenu ToolBar.TabPrevious Goto Previous Tab
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/arrow-right-double.xpm 1.285 ToolBar.TabLast :tablast<cr>
+"tmenu ToolBar.TabLast Goto Last Tab
+"amenu 1.286 ToolBar.-TabSep2- :
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/dialog-close.xpm 1.287 ToolBar.TabClose :tabclose<cr>
+"tmenu ToolBar.TabClose Close Current Tab
+"amenu 1.288 ToolBar.-TabSep3- :
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabs.xpm 1.289 ToolBar.TabOpenAllInTabs :tab sball<cr>
+"tmenu ToolBar.TabOpenAllInTabs Open All Buffers In Tabs
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabmove-start.xpm 1.290 ToolBar.TabMoveStart :tabmove 0<cr>
+"tmenu ToolBar.TabMoveStart Tab Move Start
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabmove-left.xpm 1.291 ToolBar.TabMoveBack :exe 'tabmove' (tabpagenr()-2)<cr>
+"tmenu ToolBar.TabMoveBack Tab Move Back
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabmove-right.xpm 1.292 ToolBar.TabMoveForward :exe 'tabmove' tabpagenr()<cr>
+"tmenu ToolBar.TabMoveForward Tab Move Forward
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabmove-end.xpm 1.293 ToolBar.TabMove :tabmove<cr>
+"tmenu ToolBar.TabMove Tab Move End
+
+amenu Tools.Open\ NERDTree :NERDTree<cr>
+tmenu Tools.Open\ NERDTree Open NERDTree
+
+"anoremenu 200 &Videm.Open\ Videm\ Workspace :call VidemOpen()<cr>
+"tmenu 200 &Videm.Open\ Videm\ Workspace Open VidemOpen
+"
+"anoremenu 200 &Videm.-MenuSep- :
+"
+"function! VidemOpen()
+"    if has("browse") == 0
+"        let filename	=input( "workspacename: ", "", "file" )
+"    else
+"        let b:browsefilter = "Workspacefiles (*.*(vl)workspace)\t*.workspace;*.vlworkspace\nAll Files (*)\t*;.*\n"
+"        let filename    = eval('browse("", "Open Workspace", "", "")')
+"    endif
+"    exe ":VidemOpen " . filename
+"endfunction
+
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/arrow-left-double.xpm Tab.First\ Tab :tabfirst<cr>
+"tmenu Tab.First Goto First Tab
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/arrow-right.xpm Tab.Next\ Tab :tabnext<cr>
+"tmenu Tab.Next\ Tab Goto Next Tab 
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/arrow-left.xpm Tab.Previous\ Tab :tabprevious<cr>
+"tmenu Tab.Previous\ Tab Goto Previous Tab
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/arrow-right-double.xpm Tab.Last\ Tab :tablast<cr>
+"tmenu Tab.Last\ Tab Goto Last Tab
+"amenu Tab.-Sep0- :
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/dialog-close.xpm Tab.Close\ Tab :tabclose<cr>
+"tmenu Tab.Close\ Tab Close Current Tab
+"amenu Tab.-Sep1- :
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabs.xpm Tab.Open\ All\ Buffers\ In\ Tabs :tab sball<cr>
+"tmenu Tab.Open\ All\ Buffers\ In\ Tabs Open All Buffers In Tabs
+"amenu Tab.-Sep2- :
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabmove-start.xpm Tab.Move\ Tab\ to\ Start :tabmove 0<cr>
+"tmenu Tab.Move\ Tab\ to\ Start Tab Move Start
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabmove-left.xpm Tab.Move\ Tab\ Back :exe 'tabmove' (tabpagenr()-2)<cr>
+"tmenu Tab.Move\ Tab\ Back Tab Move Back
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabmove-right.xpm Tab.Move\ Tab\ Forward :exe 'tabmove' tabpagenr()<cr>
+"tmenu Tab.Move\ Tab\ Forward Tab Move Forward
+"amenu icon=/home/grizzlysmit/Pictures/icons/16/tabmove-end.xpm Tab.Move\ Tab\ to\ end :tabmove<cr>
+"tmenu Tab.Move\ Tab\ to\ end Tab Move End
+"
+"amenu Tools.-GrizzlySep0- :
+"amenu Tools.Toggle\ Tag\ List :TlistToggle<cr>
