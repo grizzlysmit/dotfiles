@@ -262,4 +262,7 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$GOPATH/bin/linux_386
 # width allowed for username in w command
 export PROCPS_USERLEN=16
 
+function ee(){
+     elvish-HEAD "$@"
+}
 # doing nothing for chezmoi
