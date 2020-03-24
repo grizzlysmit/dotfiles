@@ -266,4 +266,3 @@ function ee(){
      elvish-HEAD "$@"
 }
 export LC_GRIZZLY=grizzly
-# doing nothing for chezmoi
