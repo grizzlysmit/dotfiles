@@ -81,10 +81,10 @@ alias dfh="df --exclude-type=squashfs -h"
 set -o vi
 if [ "x$PATH" == x ]
 then
-    PATH=~/.rakudobrew/bin:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin
+    PATH=~/.rakudobrew/bin:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin
     #PATH=$HOME/bin:/usr/local/mercury-13.05.1/bin:$HOME/rakudo/rakudo/:$HOME/rakudo/rakudo/parrot/
 else
-    PATH=~/.rakudobrew/bin:$PATH:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin
+    PATH=~/.rakudobrew/bin:$PATH:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin
     #PATH=$PATH:$HOME/bin:/usr/local/mercury-13.05.1/bin:$HOME/rakudo/rakudo:$HOME/rakudo/rakudo/parrot
 fi
 DPKG_LINUX=1
@@ -99,9 +99,9 @@ export PYTHONSTARTUP
 #SAGE_ROOT=/home/grizzlysmit/download/sage/sage-2.10.2-linux-32bit-ubuntu-i686-Linux
 SAGE_ROOT="/usr/local/sage-3.0.3"
 export SAGE_ROOT
-EDITOR=/usr/bin/vim
-VISUAL=/usr/bin/vim
-JULIA_EDITOR=/usr/bin/vim
+EDITOR=/usr/bin/gvim
+VISUAL=/usr/bin/gvim
+JULIA_EDITOR=/usr/bin/gvim
 export EDITOR VISUAL JULIA_EDITOR
 export JULIA_DIR=/usr
 export JULIA_BINDIR=$JULIA_DIR/bin
@@ -265,4 +265,5 @@ export PROCPS_USERLEN=16
 function ee(){
      elvish-HEAD "$@"
 }
+export LC_GRIZZLY=grizzly
 # doing nothing for chezmoi
