@@ -99,8 +99,8 @@ export PYTHONSTARTUP
 #SAGE_ROOT=/home/grizzlysmit/download/sage/sage-2.10.2-linux-32bit-ubuntu-i686-Linux
 SAGE_ROOT="/usr/local/sage-3.0.3"
 export SAGE_ROOT
-EDITOR=/usr/bin/gvim
-VISUAL=/usr/bin/gvim
+EDITOR="/usr/bin/gvim -f " 
+VISUAL="/usr/bin/gvim -f "
 JULIA_EDITOR=/usr/bin/gvim
 export EDITOR VISUAL JULIA_EDITOR
 export JULIA_DIR=/usr
