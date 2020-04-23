@@ -265,4 +265,8 @@ export PROCPS_USERLEN=16
 function ee(){
      elvish-HEAD "$@"
 }
+function work(){
+    cd ~/Projects/work/
+    lg
+}
 export LC_GRIZZLY=grizzly
