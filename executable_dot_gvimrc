@@ -1,5 +1,12 @@
 set tabpagemax=60
 
+" get rid of stupid Print button on toolbar
+" I only ever hit it by accident and then it prints
+" the entire file, no way to stop it.
+aunmenu ToolBar.Print
+
+
+
 "amenu icon=/home/grizzlysmit/Pictures/icons/16/open-in-tabs.xpm 1.15 ToolBar.OpenInNewTab :browse tabnew<cr>
 "tmenu ToolBar.OpenInNewTab Open In New Tab
 "amenu 1.281 ToolBar.-TabSep- :
