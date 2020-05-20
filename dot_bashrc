@@ -270,3 +270,5 @@ function work(){
     lg
 }
 export LC_GRIZZLY=grizzly
+
+eval "$(/home/grizzlysmit/.rakudobrew/bin/rakudobrew init Bash)"
