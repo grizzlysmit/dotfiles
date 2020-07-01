@@ -81,10 +81,10 @@ alias dfh="df --exclude-type=squashfs -h"
 set -o vi
 if [ "x$PATH" == x ]
 then
-    PATH=~/.rakudobrew/bin:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey
+    PATH=~/.rakudobrew/bin:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/softeware/bin
     #PATH=$HOME/bin:/usr/local/mercury-13.05.1/bin:$HOME/rakudo/rakudo/:$HOME/rakudo/rakudo/parrot/
 else
-    PATH=~/.rakudobrew/bin:$PATH:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey
+    PATH=~/.rakudobrew/bin:$PATH:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/softeware/bin
     #PATH=$PATH:$HOME/bin:/usr/local/mercury-13.05.1/bin:$HOME/rakudo/rakudo:$HOME/rakudo/rakudo/parrot
 fi
 DPKG_LINUX=1
