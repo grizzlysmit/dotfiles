@@ -41,6 +41,9 @@ Plugin 'WolfgangMehner/c-support'
 " Perl language support
 Plugin 'wolfgangmehner/perl-support'
 
+" Raku language support
+Plugin 'Raku/vim-raku'
+
 " WolfgangMehner/git-support
 Plugin 'WolfgangMehner/git-support'
 
