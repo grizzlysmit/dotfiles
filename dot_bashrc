@@ -81,11 +81,9 @@ alias dfh="df --exclude-type=squashfs -h"
 set -o vi
 if [ "x$PATH" == x ]
 then
-    PATH=~/.rakudobrew/bin:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin
-    #PATH=$HOME/bin:/usr/local/mercury-13.05.1/bin:$HOME/rakudo/rakudo/:$HOME/rakudo/rakudo/parrot/
+    PATH=~/.rakubrew/bin:$HOME/bin:$HOME/.rakubrew/moar-nom/install/bin:$HOME/raku/doc/bin:$HOME/.rakubrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin
 else
-    PATH=~/.rakudobrew/bin:$PATH:$HOME/bin:$HOME/.rakudobrew/moar-nom/install/bin:$HOME/rakudo/doc/bin:$HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin
-    #PATH=$PATH:$HOME/bin:/usr/local/mercury-13.05.1/bin:$HOME/rakudo/rakudo:$HOME/rakudo/rakudo/parrot
+    PATH=~/.rakubrew/bin:$PATH:$HOME/bin:$HOME/.rakubrew/moar-nom/install/bin:$HOME/raku/doc/bin:$HOME/.rakubrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin
 fi
 DPKG_LINUX=1
 export PATH DPKG_LINUX
@@ -149,8 +147,6 @@ function erpclient(){
 
 VIEWER=/usr/bin/less
 PUGS_REGEX_ENGINE="PGE"
-#PARROT_PATH="/home/grizzlysmit/rakudo/rakudo/install/lib/parrot/4.0.0-devel/"
-#PARROT_PATH="/home/grizzlysmit/rakudo/rakudo/parrot/tools/dev"
 export VIEWER PUGS_REGEX_ENGINE #PUGS_EMBED PARROT_PATH
 
 SAGE_ROOT=/usr/lib/sage
@@ -271,4 +267,4 @@ function work(){
 }
 export LC_GRIZZLY=grizzly
 
-eval "$(/home/grizzlysmit/.rakudobrew/bin/rakudobrew init Bash)"
+eval "$(/home/grizzlysmit/bin/rakudobrew init Bash)"
