@@ -81,9 +81,9 @@ alias dfh="df --exclude-type=squashfs -h"
 set -o vi
 if [ "x$PATH" == x ]
 then
-    PATH=~/.rakubrew/bin:$HOME/bin:$HOME/.rakubrew/moar-nom/install/bin:$HOME/raku/doc/bin:$HOME/.rakubrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin
+    PATH=~/.rakubrew/bin:$HOME/bin:$HOME/.rakubrew/moar-nom/install/bin:$HOME/raku/doc/bin:$HOME/.rakubrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin:$HOME/kotlin-native-linux-1.4/bin
 else
-    PATH=~/.rakubrew/bin:$PATH:$HOME/bin:$HOME/.rakubrew/moar-nom/install/bin:$HOME/raku/doc/bin:$HOME/.rakubrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin
+    PATH=~/.rakubrew/bin:$PATH:$HOME/bin:$HOME/.rakubrew/moar-nom/install/bin:$HOME/raku/doc/bin:$HOME/.rakubrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin:$HOME/kotlin-native-linux-1.4/bin
 fi
 DPKG_LINUX=1
 export PATH DPKG_LINUX
@@ -268,3 +268,4 @@ function work(){
 export LC_GRIZZLY=grizzly
 
 eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
+# vim: :set filetype=bash #
