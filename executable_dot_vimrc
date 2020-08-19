@@ -80,6 +80,7 @@ Plugin 'latex-box-team/latex-box'
 " NerdTree File Browser
 Plugin 'scrooloose/nerdtree'
 
+" Mercury syntax hylighting
 Plugin 'mercury-language/mercury'
 
 
@@ -88,6 +89,9 @@ Plugin 'JuliaEditorSupport/julia-vim'
 
 " Elvish support
 Plugin 'dmix/elvish.vim'
+
+" Kotlin Syntax Hylighting
+Plugin 'udalov/kotlin-vim'
 
 " AsyncRun support
 Plugin 'skywind3000/asyncrun.vim'
