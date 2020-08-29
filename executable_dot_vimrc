@@ -483,3 +483,4 @@ if has('persistent_undo')
   set undodir=~/.UNDO
   set undofile
 endif
+let g:Templates_PersonalizationFile = 'templates/personal.template*'
