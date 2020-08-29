@@ -12,6 +12,10 @@ call vundle#begin()
 " to uppdate 
 " :source %
 " :PluginInstall
+" to update already added entries 
+" :source %
+" :PluginUpdate
+" :PluginInstall!
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
