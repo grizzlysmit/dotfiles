@@ -99,8 +99,9 @@ SAGE_ROOT="/usr/local/sage-3.0.3"
 export SAGE_ROOT
 EDITOR="/usr/bin/vim" 
 VISUAL="/usr/bin/vim"
+GUI_EDITOR="/usr/bin/gvim"
 JULIA_EDITOR=/usr/bin/vim
-export EDITOR VISUAL JULIA_EDITOR
+export EDITOR VISUAL JULIA_EDITOR GUI_EDITOR
 export JULIA_DIR=/usr
 export JULIA_BINDIR=$JULIA_DIR/bin
 BROWSER=/usr/bin/firefox
