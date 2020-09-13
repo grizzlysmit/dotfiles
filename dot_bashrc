@@ -215,7 +215,7 @@ function pvcp()
 }
 
 #XMMS_PATH="tcp://192.168.0.13:8002"
-XMMS_PATH="tcp://192.168.1.13:9667"
+XMMS_PATH="tcp://192.168.1.15:9667"
 #XMMS_PATH="tcp://:8002"
 export XMMS_PATH 
 
