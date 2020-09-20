@@ -249,7 +249,7 @@ complete -F _quilt_completion $_quilt_complete_opt dquilt
 # shellcheck disable=SC1091
 echo $- | grep -q i 2>/dev/null && . /usr/share/liquidprompt/liquidprompt
 
-export PROMPT_COMMAND='echo -n "$(date +"%F") "'
+#export PROMPT_COMMAND='echo -n "$(date +"%F") "'
 
 #source ~/perl5/perlbrew/etc/bashrc
 # go stuff
