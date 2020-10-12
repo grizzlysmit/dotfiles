@@ -271,6 +271,6 @@ function work(){
 export LC_GRIZZLY=grizzly
 
 export PAGER=most
-export MOST_SWITCHES="-d"
+#export MOST_SWITCHES="-d"
 eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
 # vim: :set filetype=bash #
