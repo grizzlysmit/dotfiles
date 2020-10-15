@@ -91,9 +91,9 @@ export PATH DPKG_LINUX
 #export PERL6LIB=$HOME/lib6,$HOME/Projects/perl/perl6/testing0
 if [ -n "$RAKULIB" ]
 then
-    export RAKULIB=$RAKULIB,$HOME/lib6,$HOME/Projects/perl/perl6/testing0
+    export RAKULIB=$RAKULIB,$HOME/.raku,$HOME/rakulib,$HOME/Projects/perl/perl6/testing0
 else
-    export RAKULIB=$HOME/lib6,$HOME/Projects/perl/perl6/testing0
+    export RAKULIB=$HOME/.raku,$HOME/rakulib,$HOME/Projects/perl/perl6/testing0
 fi
 # shellcheck disable=SC2139
 alias sb="source $HOME/.bashrc"
