@@ -274,6 +274,9 @@ function work(){
     cd ~/Projects/work/
     lg
 }
+function name(){
+   echo $USER
+}
 export LC_GRIZZLY=grizzly
 
 #export PAGER=most
