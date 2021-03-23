@@ -78,6 +78,7 @@ alias graphics="man netpbm"
 alias es="es -l"
 unalias ll
 alias lg="ls -Flahi"
+alias eg="ls -Flahig"
 alias dfh="df --exclude-type=squashfs -h"
 set -o vi
 if [ "x$PATH" == x ]
