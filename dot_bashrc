@@ -78,10 +78,10 @@ alias graphics="man netpbm"
 alias es="es -l"
 unalias ll
 alias lg="ls -Flahi"
-alias eb="exa -FlahigHb  --colour-scale --time-style=full-iso"
-alias eg="exa -FlahigH   --colour-scale --time-style=full-iso"
-alias tb="exa -FlahigHTb --colour-scale --time-style=full-iso"
-alias tg="exa -FlahigHT  --colour-scale --time-style=full-iso"
+alias eb="exa -FlahigHb  --all --colour-scale --time-style=full-iso"
+alias eg="exa -FlahigH   --all --colour-scale --time-style=full-iso"
+alias tb="exa -FlahigHTb --all --colour-scale --time-style=full-iso"
+alias tg="exa -FlahigHT  --all --colour-scale --time-style=full-iso"
 alias dfh="df --exclude-type=squashfs -h"
 set -o vi
 if [ "x$PATH" == x ]
