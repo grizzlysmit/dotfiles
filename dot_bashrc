@@ -90,6 +90,7 @@ then
 else
     PATH=~/.rakubrew/bin:$PATH:$HOME/bin:$HOME/.rakubrew/moar-nom/install/bin:$HOME/raku/doc/bin:$HOME/.rakubrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin:$HOME/kotlin-native-linux-1.4/bin
 fi
+XDG_DATA_DIRS=$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/grizzlysmit/.local/share/flatpak/exports/share
 DPKG_LINUX=1
 export PATH DPKG_LINUX
 #export PERL6LIB=$HOME/lib6,$HOME/Projects/perl/perl6/testing0
