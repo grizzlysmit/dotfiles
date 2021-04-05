@@ -133,7 +133,7 @@ function lts()
 }
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/share/pkgconfig
 export GOROOT=$HOME/go
-export GOARCH=386
+export GOARCH=amd64
 export GOOS=linux
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/gcc/i486-linux-gnu/4.4.1:/usr/lib/gcc/i486-linux-gnu
 #if [ x$MANPATH == x ]
