@@ -289,8 +289,4 @@ export LC_GRIZZLY=grizzly
 export PAGER=less
 #export MOST_SWITCHES="-d"
 eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
-if [ -f "$HOME/.bash_profile" ]
-then
-    source "$HOME/.bash_profile"
-fi
 # vim: :set filetype=bash #
