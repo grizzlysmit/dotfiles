@@ -117,7 +117,7 @@ JULIA_EDITOR=/usr/bin/vim
 export EDITOR VISUAL JULIA_EDITOR GUI_EDITOR
 export JULIA_DIR=/usr
 export JULIA_BINDIR=$JULIA_DIR/bin
-export QT_QPA_PLATFORM=wayland
+#export QT_QPA_PLATFORM=wayland
 BROWSER=/usr/bin/firefox
 export BROWSER
 alias cp="cp -v"
