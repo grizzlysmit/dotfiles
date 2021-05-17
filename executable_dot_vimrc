@@ -105,6 +105,26 @@ Plugin 'skywind3000/asyncrun.vim'
 " cmake support
 Plugin 'vhdirk/vim-cmake'
 
+" dart language support
+Plugin 'dart-lang/dart-vim-plugin'
+
+" Dart LSC VIM 
+" The Dart SDK comes with an analysis server that
+" can be run in Language Server Protocol (LSP) mode.
+" The dart-lsc-vim plugin help to register the dart
+" analysis server as a language server by using vim-lsc.
+" Again, by using Vundle you can easily install both
+" vim-lsc-dart and vim-lsc as below:
+Plugin 'natebosch/vim-lsc'
+Plugin 'natebosch/vim-lsc-dart'
+
+" CoC.nvim is an intellisense engine for vim
+" (>= 8.1) and neovim (>=0.3.1). It is a
+" completion framework and language service
+" client which supports extension features of VSCode.
+Plugin 'neoclide/coc.nvim'
+
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -125,6 +145,22 @@ Plugin 'vhdirk/vim-cmake'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+"   Turn vim-lsc key maps On
+let g:lsc_auto_map = v:true
+
+"    vim-lsc key maps
+"    'GoToDefinition': <C-]>,
+"    'GoToDefinitionSplit': [<C-W>], <C-W><C-]>],
+"    'FindReferences': gr,
+"    'NextReference': <C-n>,
+"    'PreviousReference': <C-p>,
+"    'FindImplementations': gI,
+"    'FindCodeActions': ga,
+"    'Rename': gR,
+"    'DocumentSymbol': go,
+"    'WorkspaceSymbol': gS,
+"    'SignatureHelp': gm,
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
