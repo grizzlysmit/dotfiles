@@ -109,7 +109,7 @@ Plugin 'vhdirk/vim-cmake'
 Plugin 'c9s/perlomni.vim'
 
 " vim-vdebug/vdebug
-Plugin 'vim-vdebug/vdebug'
+"Plugin 'vim-vdebug/vdebug'
 
 " dart language support
 Plugin 'dart-lang/dart-vim-plugin'
