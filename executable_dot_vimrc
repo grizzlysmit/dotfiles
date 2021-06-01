@@ -105,6 +105,9 @@ Plugin 'skywind3000/asyncrun.vim'
 " cmake support
 Plugin 'vhdirk/vim-cmake'
 
+"  c9s/perlomni.vim 
+Plugin 'c9s/perlomni.vim'
+
 " dart language support
 Plugin 'dart-lang/dart-vim-plugin'
 
