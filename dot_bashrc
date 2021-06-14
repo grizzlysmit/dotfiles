@@ -273,6 +273,7 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$GOPATH/bin/linux_386
 
 # width allowed for username in w command
 export PROCPS_USERLEN=16
+export BW_SESSION="mkgLKgQuGTNTnEPPmlsyOPNxYPsDf83YQHYw8LkTOV9SHeKyOUhBm8ljvFBpD47O4TbVV5PPfbv+/nLsrls90A=="
 
 function ee(){
      elvish "$@"
