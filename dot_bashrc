@@ -285,6 +285,10 @@ function work(){
 function name(){
    echo $USER
 }
+function goto(){
+   cd paths.raku $1
+   eb
+}
 export LC_GRIZZLY=grizzly
 
 #export PAGER=most
