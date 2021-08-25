@@ -292,6 +292,9 @@ function goto(){
           then
              USAGE="$(paths.raku --help)"
              echo "${USAGE//paths.raku/goto}"
+          elif [ "$1" == "-" ]
+          then
+              cd -
           else
              arg=$(paths.raku "$1")
              if [ -z "$arg" ]
