@@ -283,7 +283,7 @@ function work(){
     lg
 }
 function name(){
-   echo $USER
+   echo "$USER"
 }
 function goto(){
    case $# in
@@ -314,4 +314,4 @@ export LC_GRIZZLY=grizzly
 export PAGER=less
 #export MOST_SWITCHES="-d"
 eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
-# vim: :set filetype=bash #
+# vim: :set filetype=sh :autoindent #
