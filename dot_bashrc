@@ -285,6 +285,7 @@ function work(){
 function name(){
    echo "$USER"
 }
+
 function goto(){
    case $# in
        0) cd;;
