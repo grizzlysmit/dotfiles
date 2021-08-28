@@ -153,6 +153,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 "   Turn vim-lsc key maps On
+"   must try these
 let g:lsc_auto_map = v:true
 
 "    vim-lsc key maps

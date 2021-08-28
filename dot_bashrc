@@ -286,6 +286,11 @@ function name(){
    echo "$USER"
 }
 
+##############################################################
+#                                                            #
+# goto function makes getting places in the file system easy #
+#                                                            #
+##############################################################
 function goto(){
    case $# in
        0) cd;;

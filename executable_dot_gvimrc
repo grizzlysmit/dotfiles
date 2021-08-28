@@ -3,6 +3,7 @@ set tabpagemax=60
 " get rid of stupid Print button on toolbar
 " I only ever hit it by accident and then it prints
 " the entire file, no way to stop it.
+" yay it works no print button.
 aunmenu ToolBar.Print
 
 
