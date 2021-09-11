@@ -527,3 +527,7 @@ if has('persistent_undo')
   set undofile
 endif
 let g:Templates_PersonalizationFile = 'templates/personal.template*'
+
+#cursorline and cursorcolumn
+set cursorline
+set cursorcolumn
