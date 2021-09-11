@@ -531,3 +531,14 @@ let g:Templates_PersonalizationFile = 'templates/personal.template*'
 #cursorline and cursorcolumn
 set cursorline
 set cursorcolumn
+" mappings
+" mv line down
+noremap + ddp
+" mv line up
+noremap - ddkkp
+" scroll up or down
+noremap <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
+noremap <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
+
+" add a space after a comma. 
+inoremap , ,<space>
