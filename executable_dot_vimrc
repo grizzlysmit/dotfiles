@@ -528,7 +528,7 @@ if has('persistent_undo')
 endif
 let g:Templates_PersonalizationFile = 'templates/personal.template*'
 
-#cursorline and cursorcolumn
+" cursorline and cursorcolumn
 set cursorline
 set cursorcolumn
 " mappings
