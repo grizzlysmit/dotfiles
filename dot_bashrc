@@ -319,7 +319,7 @@ function goto(){
 export LC_GRIZZLY=grizzly
 
 #export PAGER=most
-alias chez="VISUAL=/usr/bin/gvim chezmoi edit \$HOME/.bashrc \$HOME/.vimrc \$HOME/.gvimrc"
+alias chez="VISUAL=/usr/bin/gvim chezmoi edit ~/.bashrc ~/.vimrc ~/.gvimrc"
 export PAGER=less
 #export MOST_SWITCHES="-d"
 eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
