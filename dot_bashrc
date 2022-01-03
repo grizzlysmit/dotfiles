@@ -322,6 +322,7 @@ export LC_GRIZZLY=grizzly
 alias chez="VISUAL=~/bin/wgvim chezmoi edit ~/.bashrc ~/.vimrc ~/.gvimrc"
 alias pg="pgrep --full --list-full"
 export PAGER=less
+export GIT_MESSAGE="latest stuff"
 #export MOST_SWITCHES="-d"
 eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
 # vim: :set filetype=sh :autoindent #
