@@ -86,6 +86,7 @@ alias tg="exa -FlahigHT   --colour-scale --time-style=full-iso"
 alias dfh="df --exclude-type=squashfs -h"
 export LIST_FILES="exa -FlaahigHb  --colour-scale --time-style=full-iso"
 alias snapl="snap list --all  --color=always  --unicode=always"
+alias nf="neofetch   --cpu_temp C --cpu_cores logical"
 set -o vi
 if [ "x$PATH" == x ]
 then
