@@ -85,6 +85,7 @@ alias tb="exa -FlahigHTb  --colour-scale --time-style=full-iso"
 alias tg="exa -FlahigHT   --colour-scale --time-style=full-iso"
 alias dfh="df --exclude-type=squashfs -h"
 export LIST_FILES="exa -FlaahigHb  --colour-scale --time-style=full-iso"
+alias snapl="snap list --all  --color=always  --unicode=always"
 set -o vi
 if [ "x$PATH" == x ]
 then
