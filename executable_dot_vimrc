@@ -551,3 +551,7 @@ noremap <C-Z> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><
 
 " add a space after a comma. 
 inoremap , ,<space>
+
+nmap <silent> <C-space> <Plug>(Fzm)
+vmap <silent> <C-space> <Plug>(FzmVisual)
+
