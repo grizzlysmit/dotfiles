@@ -131,6 +131,15 @@ Plugin 'natebosch/vim-lsc-dart'
 Plugin 'neoclide/coc.nvim'
 
 
+" stuff to enhance marks in vim
+Plugin 'jeetsukumaran/vim-markology'
+
+" fuzzymenu stufff
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'laher/fuzzymenu.vim'
+
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
