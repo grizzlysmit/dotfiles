@@ -140,7 +140,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'laher/fuzzymenu.vim'
 
 " email
-Plugin  'dcbaker/vim-abook'
+Plugin 'paniash/abook.vim'
+Plugin 'dcbaker/vim-abook'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
