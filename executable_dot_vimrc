@@ -128,7 +128,7 @@ Plugin 'natebosch/vim-lsc-dart'
 " (>= 8.1) and neovim (>=0.3.1). It is a
 " completion framework and language service
 " client which supports extension features of VSCode.
-Plugin 'neoclide/coc.nvim'
+"Plugin 'neoclide/coc.nvim'
 
 
 " stuff to enhance marks in vim
