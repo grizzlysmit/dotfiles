@@ -89,7 +89,7 @@ export LIST_FILES="exa -FlaahigHb  --colour-scale --time-style=full-iso"
 alias snapl="snap list --all  --color=always  --unicode=always"
 alias nf="neofetch   --cpu_temp C --cpu_cores logical"
 set -o vi
-if [ "x$PATH" == x ]
+if [ -z "$PATH" ]
 then
     PATH=~/.vim/bundle/perlomni.vim/bin:~/.rakubrew/bin:$HOME/bin:$HOME/.rakubrew/moar-nom/install/bin:$HOME/raku/doc/bin:$HOME/.rakubrew/moar-nom/install/share/perl6/site/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:~/work/bin:~/software/seamonkey:~/software/bin:$HOME/kotlin-native-linux-1.4/bin:/usr/lib/dart/bin
 else
@@ -149,7 +149,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/gcc/i486-linux-gnu/4.4.1:/usr/l
 #else
 #    export MANPATH=$MANPATH:/usr/local/mercury-14.01/man
 #fi
-if [ "x$INFOPATH" == x ]
+if [ -z "$INFOPATH" ]
 then
     export INFOPATH=/usr/local/share/info:/usr/local/mercury-DEV/share/info
 else
@@ -203,11 +203,7 @@ alias kfinger="ssh grizzlysmit@killashandra.local 'finger'"
 # shellcheck disable=SC2111
 function grizzly(){
     set -o vi
-    alias lf="ls -Flahi"
-    # shellcheck disable=SC2111
-    function fred(){
-        lf
-    }
+    lg
 }
 
 SAGE_ROOT=/usr/lib/sagemath
