@@ -318,6 +318,7 @@ function name(){
 #}
 if [ -e "$HOME/.bash_aliases" ]
 then
+    # shellcheck disable=SC1090
     source ~/.bash_aliases
 fi
 export LC_GRIZZLY=grizzly
