@@ -80,7 +80,7 @@ alias graphics="man netpbm"
 alias es="es -l"
 unalias ll
 alias lg="ls -Flahi"
-#alias eb="exa -FlaahigHb  --colour-scale --time-style=full-iso" defined in ~/.bash_aliases
+#alias eb="exa -FlaahigHb  --colour-scale --time-style=full-iso" defined in ~/.goto_bash_aliases
 alias eg="exa -FlaahigH   --colour-scale --time-style=full-iso"
 alias tb="exa -FlahigHTb  --colour-scale --time-style=full-iso"
 alias tg="exa -FlahigHT   --colour-scale --time-style=full-iso"
