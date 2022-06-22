@@ -316,7 +316,7 @@ function name(){
 #      *) paths.raku "$@";;
 #   esac
 #}
-if [ -e "$HOME/bash_aliases" ]
+if [ -e "$HOME/.bash_aliases" ]
 then
     source ~/.bash_aliases
 fi
