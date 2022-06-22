@@ -293,29 +293,33 @@ function name(){
 # goto function makes getting places in the file system easy #
 #                                                            #
 ##############################################################
-function goto(){
-   case $# in
-       0) cd;;
-       1) if [[ "$1" == "--help" ]]
-          then
-             USAGE="$(paths.raku --help)"
-             echo "${USAGE//paths.raku/goto}"
-          elif [ "$1" == "-" ]
-          then
-              cd -
-          else
-             arg=$(paths.raku "$1")
-             if [ -z "$arg" ]
-             then
-                 echo "error: $1 not found"
-             else
-                 cd "$arg"
-                 eb
-             fi
-          fi;;
-      *) paths.raku "$@";;
-   esac
-}
+#function goto(){
+#   case $# in
+#       0) cd;;
+#       1) if [[ "$1" == "--help" ]]
+#          then
+#             USAGE="$(paths.raku --help)"
+#             echo "${USAGE//paths.raku/goto}"
+#          elif [ "$1" == "-" ]
+#          then
+#              cd -
+#          else
+#             arg=$(paths.raku "$1")
+#             if [ -z "$arg" ]
+#             then
+#                 echo "error: $1 not found"
+#             else
+#                 cd "$arg"
+#                 eb
+#             fi
+#          fi;;
+#      *) paths.raku "$@";;
+#   esac
+#}
+if [ -e "$HOME/bash_aliases" ]
+then
+    source ~/.bash_aliases
+fi
 export LC_GRIZZLY=grizzly
 
 #export PAGER=most
