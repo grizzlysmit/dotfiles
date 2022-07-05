@@ -321,6 +321,7 @@ then
     # shellcheck disable=SC1090
     source ~/.bash_aliases
 fi
+export XDG_CONFIG_HOME="$HOME/.config"
 export LC_GRIZZLY=grizzly
 
 #export PAGER=most
