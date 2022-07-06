@@ -99,7 +99,7 @@ XDG_DATA_DIRS=$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/grizzlysmit/.l
 DPKG_LINUX=1
 GOARCH=amd64
 export PATH DPKG_LINUX XDG_DATA_DIRS GOARCH
-export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_DATA_HOME="$HOME/.config"
 #export PERL6LIB=$HOME/lib6,$HOME/Projects/perl/perl6/testing0
 if [ -n "$RAKULIB" ]
 then
