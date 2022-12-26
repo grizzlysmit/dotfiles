@@ -259,10 +259,11 @@ let g:C_FormatYear            = '%Y'
 " Clang-format
 
 let g:clang_format#style_options = {
-            \ "AccessModifierOffset" : -4,
+            \ "AccessModifierOffset" : 4,
             \ "IndentAccessModifiers" : "true", 
             \ "AllowShortIfStatementsOnASingleLine" : "true",
             \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "IndentWidth" : 4, 
             \ "TabWidth" : 4, 
             \ "UseTab" : "Never", 
             \ "SpaceBeforeAssignmentOperators" : "true", 
