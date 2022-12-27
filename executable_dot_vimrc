@@ -143,7 +143,7 @@ Plugin 'laher/fuzzymenu.vim'
 Plugin 'soywod/iris.vim'
 
 "  clang format
-PLugin 'rhysd/vim-clang-format'
+Plugin 'rhysd/vim-clang-format'
 
 Plugin 'kana/vim-operator-user'
 
