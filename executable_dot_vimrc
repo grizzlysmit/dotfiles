@@ -228,6 +228,11 @@ let g:lsc_auto_map = v:true
 "  As a workaround set
 " let c_no_curly_error=1
 " Syntactic
+
+" configure Raku/vim-raku 
+let g:raku_unicode_abbrevs = 1
+
+" status line stuff
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
