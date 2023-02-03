@@ -93,9 +93,9 @@ RAKUBREW_CURRENT="$(cat "$HOME/.rakubrew/CURRENT")"
 export RAKUBREW_CURRENT
 if [ -z "$PATH" ]
 then
-    PATH="$HOME/.rakubrew/versions/$RAKUBREW_CURRENT/install/share/perl6/site/bin/:$HOME/.vim/bundle/perlomni.vim/bin:$HOME/.rakubrew/bin:$HOME/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:$HOME/work/bin:$HOME/software/seamonkey:$HOME/software/bin:$HOME/kotlin-native-linux-1.4/bin:/usr/lib/dart/bin"
+    PATH="$HOME/.vim/bundle/perlomni.vim/bin:$HOME/.rakubrew/bin:$HOME/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:$HOME/work/bin:$HOME/software/seamonkey:$HOME/software/bin:$HOME/kotlin-native-linux-1.4/bin:/usr/lib/dart/bin"
 else
-    PATH="$HOME/.rakubrew/versions/$RAKUBREW_CURRENT/install/share/perl6/site/bin/:$HOME/.vim/bundle/perlomni.vim/bin:$HOME/.rakubrew/bin:$PATH:$HOME/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:$HOME/work/bin:$HOME/software/seamonkey:$HOME/software/bin:$HOME/kotlin-native-linux-1.4/bin:/usr/lib/dart/bin"
+    PATH="$HOME/.vim/bundle/perlomni.vim/bin:$HOME/.rakubrew/bin:$PATH:$HOME/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:$HOME/work/bin:$HOME/software/seamonkey:$HOME/software/bin:$HOME/kotlin-native-linux-1.4/bin:/usr/lib/dart/bin"
 fi
 #XDG_DATA_DIRS=$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/grizzlysmit/.local/share/flatpak/exports/share
 XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share:$HOME/.config"
@@ -334,6 +334,8 @@ export PAGER=less
 export GIT_MESSAGE="latest stuff"
 #export MOST_SWITCHES="-d"
 eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
+PATH="$HOME/.rakubrew/versions/$RAKUBREW_CURRENT/install/share/perl6/site/bin/:$PATH"
+export PATH
 
 #PATH="/home/grizzlysmit/perl5/bin${PATH:+:${PATH}}"; export PATH;
 #PERL5LIB="/home/grizzlysmit/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
