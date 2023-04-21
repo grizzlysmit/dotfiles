@@ -337,6 +337,8 @@ eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
 PATH="$HOME/.rakubrew/versions/$RAKUBREW_CURRENT/install/share/perl6/site/bin/:$PATH"
 export PATH
 
+export MAIL=~/Maildir
+
 #PATH="/home/grizzlysmit/perl5/bin${PATH:+:${PATH}}"; export PATH;
 #PERL5LIB="/home/grizzlysmit/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 #PERL_LOCAL_LIB_ROOT="/home/grizzlysmit/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
