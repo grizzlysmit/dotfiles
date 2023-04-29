@@ -337,6 +337,10 @@ eval "$(/home/grizzlysmit/bin/rakubrew init Bash)"
 PATH="$HOME/.rakubrew/versions/$RAKUBREW_CURRENT/install/share/perl6/site/bin/:$PATH"
 export PATH
 
+function clr(){
+    ncal -C "$@"
+}
+
 export MOZ_ENABLE_WAYLAND=1
 
 export MAIL=~/Maildir
