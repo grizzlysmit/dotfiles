@@ -1,3 +1,4 @@
+" vim: :set filetype=vim :autoindent
 set tabpagemax=60
 
 " get rid of stupid Print button on toolbar
@@ -78,3 +79,4 @@ tmenu Tools.Open\ NERDTree Open NERDTree
 "
 "amenu Tools.-GrizzlySep0- :
 "amenu Tools.Toggle\ Tag\ List :TlistToggle<cr>
+" vim: :set filetype=vim :autoindent
