@@ -344,6 +344,7 @@ function clr(){
 export MOZ_ENABLE_WAYLAND=1
 
 export MAIL=~/Maildir
+shopt -s globstar
 
 #PATH="/home/grizzlysmit/perl5/bin${PATH:+:${PATH}}"; export PATH;
 #PERL5LIB="/home/grizzlysmit/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
