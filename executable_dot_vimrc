@@ -125,12 +125,6 @@ Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'natebosch/vim-lsc'
 Plugin 'natebosch/vim-lsc-dart'
 
-" CoC.nvim is an intellisense engine for vim
-" (>= 8.1) and neovim (>=0.3.1). It is a
-" completion framework and language service
-" client which supports extension features of VSCode.
-"Plugin 'neoclide/coc.nvim'
-
 
 " stuff to enhance marks in vim
 Plugin 'jeetsukumaran/vim-markology'
@@ -231,7 +225,7 @@ let g:lsc_auto_map = v:true
 " Syntactic
 
 " configure Raku/vim-raku 
-let g:raku_unicode_abbrevs = 1
+let g:raku_unicode_abbrevs = 0
 
 " status line stuff
 set statusline+=%#warningmsg#
