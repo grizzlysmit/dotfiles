@@ -95,7 +95,7 @@ if [ -z "$PATH" ]
 then
     PATH="$HOME/.vim/bundle/perlomni.vim/bin:$HOME/.rakubrew/bin:$HOME/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:$HOME/work/bin:$HOME/software/seamonkey:$HOME/software/bin:$HOME/kotlin-native-linux-1.4/bin:/usr/lib/dart/bin"
 else
-    PATH="$HOME/.vim/bundle/perlomni.vim/bin:$HOME/.rakubrew/bin:$PATH:$HOME/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:$HOME/work/bin:$HOME/software/seamonkey:$HOME/software/bin:$HOME/kotlin-native-linux-1.4/bin:/usr/lib/dart/bin"
+    PATH="$HOME/comma/current/bin:$HOME/.vim/bundle/perlomni.vim/bin:$HOME/.rakubrew/bin:$PATH:$HOME/bin:$HOME/.cargo/bin:/usr/local/mercury-DEV/bin:$HOME/work/bin:$HOME/software/seamonkey:$HOME/software/bin:$HOME/kotlin-native-linux-1.4/bin:/usr/lib/dart/bin"
 fi
 #XDG_DATA_DIRS=$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/grizzlysmit/.local/share/flatpak/exports/share
 XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share:$HOME/.config"
