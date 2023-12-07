@@ -343,6 +343,8 @@ function clr(){
 
 export MOZ_ENABLE_WAYLAND=1
 
+export AUTHOR_TESTING=1
+
 export MAIL=~/Maildir
 shopt -s globstar
 
