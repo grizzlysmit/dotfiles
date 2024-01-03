@@ -110,6 +110,7 @@ then
 else
     export RAKULIB=$HOME/.raku,$HOME/rakulib,$HOME/Projects/perl/perl6/testing0
 fi
+export GIT_ZEF_AUTH=zef:grizzlysmit
 # shellcheck disable=SC2139
 alias sb="source $HOME/.bashrc"
 # shellcheck disable=SC2139
