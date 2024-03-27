@@ -110,7 +110,7 @@ then
 else
     export RAKULIB=$HOME/.raku,$HOME/rakulib,$HOME/Projects/perl/perl6/testing0
 fi
-export GIT_ZEF_AUTH=zef:grizzlysmit
+export MK_RAKU_DIRS_ZEF_AUTH=zef:grizzlysmit
 # shellcheck disable=SC2139
 alias sb="source $HOME/.bashrc"
 # shellcheck disable=SC2139
@@ -118,8 +118,8 @@ alias src="source $HOME/.bashrc"
 PYTHONSTARTUP="$HOME/.pythonrc.py"
 export PYTHONSTARTUP
 #SAGE_ROOT=/home/grizzlysmit/download/sage/sage-2.10.2-linux-32bit-ubuntu-i686-Linux
-SAGE_ROOT="/usr/local/sage-3.0.3"
-export SAGE_ROOT
+#SAGE_ROOT="/usr/local/sage-3.0.3"
+#export SAGE_ROOT
 EDITOR="/usr/bin/vim" 
 VISUAL="/usr/bin/vim"
 GUI_EDITOR="/usr/bin/gvim"
@@ -174,8 +174,8 @@ VIEWER=/usr/bin/less
 PUGS_REGEX_ENGINE="PGE"
 export VIEWER PUGS_REGEX_ENGINE #PUGS_EMBED PARROT_PATH
 
-SAGE_ROOT=/usr/lib/sage
-export SAGE_ROOT
+#SAGE_ROOT=/usr/lib/sage
+#export SAGE_ROOT
 #directory tree please:
 # shellcheck disable=SC2111
 function lstree() {
@@ -210,8 +210,8 @@ function grizzly(){
     lg
 }
 
-SAGE_ROOT=/usr/lib/sagemath
-export SAGE_ROOT
+#SAGE_ROOT=/usr/lib/sagemath
+#export SAGE_ROOT
 
 # shellcheck disable=SC2111
 function pvcp()
