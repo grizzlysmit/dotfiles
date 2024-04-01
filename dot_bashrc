@@ -330,7 +330,7 @@ export LC_GRIZZLY=grizzly
 
 #export PAGER=most
 alias chez="VISUAL=~/bin/wgvim chezmoi edit ~/.bashrc ~/.vimrc ~/.gvimrc"
-alias pg="pgrep --full --list-full list-name"
+alias pg="pgrep --full --list-full --list-name"
 export PAGER=less
 export GIT_MESSAGE="latest stuff"
 #export MOST_SWITCHES="-d"
