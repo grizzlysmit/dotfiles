@@ -81,9 +81,9 @@ alias es="es -l"
 unalias ll
 alias lg="ls -Flahi"
 #alias eb="exa -FlaahigHb  --colour-scale --time-style=full-iso" defined in ~/.goto_bash_aliases
-alias eg="exa -FlaahigH   --colour-scale --time-style=full-iso"
-alias tb="exa -FlahigHTb  --colour-scale --time-style=full-iso"
-alias tg="exa -FlahigHT   --colour-scale --time-style=full-iso"
+alias eg="exa -F -laahigH   --colour-scale --time-style=full-iso"
+alias tb="exa -F -lahigHTb  --colour-scale --time-style=full-iso"
+alias tg="exa -F -lahigHT   --colour-scale --time-style=full-iso"
 alias dfh="df --exclude-type=squashfs -h"
 export LIST_FILES="exa -FlaahigHb  --colour-scale --time-style=full-iso"
 alias snapl="snap list --all  --color=always  --unicode=always"
