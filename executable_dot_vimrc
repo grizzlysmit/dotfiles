@@ -223,6 +223,7 @@ let g:lsc_auto_map = v:true
 "  As a workaround set
 " let c_no_curly_error=1
 " Syntactic
+let g:syntastic_javascript_checkers=['eslint']
 
 " configure Raku/vim-raku 
 let g:raku_unicode_abbrevs = 0
