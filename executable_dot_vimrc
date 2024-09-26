@@ -143,6 +143,8 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'kana/vim-operator-user'
 
 
+Plugin 'grizzlysmit/vim-cpp2'
+
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
 
