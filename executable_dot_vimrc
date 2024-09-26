@@ -22,9 +22,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Sytaxhighligting`
-"Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 " Plugin 'bfrg/vim-cpp-enhanced-highlight'
 "Plugin 'vim-syntastic/syntastic'
+Plugin 'bfrg/vim-cpp-modern'
 
 "add you complete me
 Plugin 'Valloric/YouCompleteMe'
