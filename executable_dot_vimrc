@@ -496,6 +496,7 @@ augroup END
 " au FileType python source $VIMRUNTIME/indent/python.vim
 " au FileType python source $VIMRUNTIME/syntax/python.vim
 " au   BufEnter *   execute ":lcd " . expand("%:p:h")
+autocmd FileType cpp2, h2 source $HOME/.vim/bundle/cpp2.vim/syntax/cpp2.vim
 menu Edit.Fileformat.unix :set fileformat=unix<cr>:w<cr>
 menu Edit.Fileformat.dos :set fileformat=dos<cr>:w<cr>
 menu Edit.Fileformat.mac :set fileformat=mac<cr>:w<cr>
