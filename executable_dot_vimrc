@@ -204,21 +204,21 @@ let g:lsc_auto_map = v:true
 
 " syntax Highligting
 " Highlighting of class scope is disabled by default. To enable set
-"let g:cpp_class_scope_highlight = 1
+let g:cpp_class_scope_highlight = 1
 " Highlighting of member variables is disabled by default. To enable set
-"let g:cpp_member_variable_highlight = 1
+let g:cpp_member_variable_highlight = 1
 " Highlighting of class names in declarations is disabled by default. To enable set
-"let g:cpp_class_decl_highlight = 1
+let g:cpp_class_decl_highlight = 1
 " There are two ways to hightlight template functions. Either
 "let g:cpp_experimental_simple_template_highlight = 1
 " which works in most cases, but can be a little slow on large files. Alternatively set
 "let g:cpp_experimental_template_highlight = 1
 " Highlighting of member variable names is enabled by setting
-"let g:cpp_experimental_template_highlight = 1
+let g:cpp_experimental_template_highlight = 1
 " To enable highlighting of C++ library concepts, set
-"let g:cpp_concepts_highlight = 2
+let g:cpp_concepts_highlight = 2
 " Highlighting of user defined functions can be disabled by
-"let g:cpp_no_function_highlight = 1
+let g:cpp_no_function_highlight = 1
 " 
 " Vim tends to a have issues with flagging braces inside brackets as invalid syntax such as in the following example:
 "  std::map<std::pair<int, int>, int> m;
@@ -273,29 +273,29 @@ let g:clang_format#style_options = {
             \ "SpaceBeforeAssignmentOperators" : "true", 
             \ "Standard" : "C++11"}
 
-"let g:cpp_class_scope_highlight = 1
+let g:cpp_class_scope_highlight = 1
 
-"let g:cpp_member_variable_highlight = 1
+let g:cpp_member_variable_highlight = 1
 
-"let g:cpp_class_decl_highlight = 1
+let g:cpp_class_decl_highlight = 1
 
-"let g:cpp_posix_standard = 1
+let g:cpp_posix_standard = 1
 
-"let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
 
-"let g:cpp_experimental_template_highlight = 1
+let g:cpp_experimental_template_highlight = 1
 
-"let g:cpp_function_highlight = 1
+let g:cpp_function_highlight = 1
 
 " Enable highlighting of C++11 attributes
-"let g:cpp_attributes_highlight = 1
+let g:cpp_attributes_highlight = 1
 
 " Highlight struct/class member variables (affects both C and C++ files)
-"let g:cpp_member_highlight = 1
+let g:cpp_member_highlight = 1
 
 " Put all standard C and C++ keywords under Vim's highlight group 'Statement'
 " (affects both C and C++ files)
-"let g:cpp_simple_highlight = 1
+let g:cpp_simple_highlight = 1
 
 
 
