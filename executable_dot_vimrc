@@ -219,6 +219,12 @@ let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 2
 " Highlighting of user defined functions can be disabled by
 let g:cpp_no_function_highlight = 1
+
+" Enable comment hilighting. 
+let g:c_comment_strings = 1
+
+" Tweak /* ... */ comments  
+let g:c_no_comment_fold = 1
 " 
 " Vim tends to a have issues with flagging braces inside brackets as invalid syntax such as in the following example:
 "  std::map<std::pair<int, int>, int> m;
