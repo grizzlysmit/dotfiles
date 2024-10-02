@@ -221,7 +221,7 @@ let g:cpp_concepts_highlight = 2
 let g:cpp_no_function_highlight = 1
 
 " Enable comment hilighting. 
-let g:c_comment_strings = 1
+"let g:c_comment_strings = 1
 
 " Tweak /* ... */ comments  
 let g:c_no_comment_fold = 1
