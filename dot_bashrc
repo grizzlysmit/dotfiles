@@ -147,7 +147,7 @@ export PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/share/pk
 export GOROOT=$HOME/go
 export GOARCH=amd64
 export GOOS=linux
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/gcc/i486-linux-gnu/4.4.1:/usr/lib/gcc/i486-linux-gnu
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/lib:/usr/lib:/usr/local/lib:/usr/lib/gcc/i486-linux-gnu/4.4.1:/usr/lib/gcc/i486-linux-gnu"
 #if [ x$MANPATH == x ]
 #then
 #    export MANPATH=/usr/local/mercury-14.01/man
