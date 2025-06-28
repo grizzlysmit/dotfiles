@@ -343,6 +343,8 @@ function clr(){
     ncal -C "$@"
 }
 
+export LS_CMD="exa -F -laahigHb --colour-scale --time-style=full-iso --icons=always"
+
 export MOZ_ENABLE_WAYLAND=1
 
 export AUTHOR_TESTING=1
