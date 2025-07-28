@@ -646,4 +646,6 @@ inoremap , ,<space>
 nmap <silent> <C-space> <Plug>(Fzm)
 vmap <silent> <C-space> <Plug>(FzmVisual)
 
+set spelllang=en_au
+
 " vim: :set filetype=vim :autoindent
