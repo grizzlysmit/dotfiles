@@ -143,8 +143,11 @@ Plugin 'rhysd/vim-clang-format'
 
 Plugin 'kana/vim-operator-user'
 
-
+" my own creation.
 Plugin 'grizzlysmit/cpp2.vim'
+
+" odin formating
+Plugin 'habamax/vim-odin'
 
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
