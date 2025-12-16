@@ -90,6 +90,7 @@ export LIST_FILES="exa -FlaahigHb  --colour-scale --time-style=full-iso"
 alias snapl="snap list --all  --color=always  --unicode=always"
 alias nf="neofetch   --cpu_temp C --cpu_cores logical"
 set -o vi
+shopt -s autocd
 RAKUBREW_CURRENT="$(cat "$HOME/.rakubrew/CURRENT")"
 export RAKUBREW_CURRENT
 if [ -z "$PATH" ]
