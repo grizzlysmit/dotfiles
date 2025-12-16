@@ -147,7 +147,7 @@ Plugin 'kana/vim-operator-user'
 Plugin 'grizzlysmit/cpp2.vim'
 
 " odin formating
-Plugin 'habamax/vim-odin'
+Plugin 'Tetralux/odin.vim'
 
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
