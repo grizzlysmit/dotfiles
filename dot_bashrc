@@ -361,6 +361,9 @@ eval "$(zoxide init bash)"
 #PERL_MM_OPT="INSTALL_BASE=/home/grizzlysmit/perl5"; export PERL_MM_OPT;
 # vim: :set filetype=sh :autoindent #
 
+# Odin programming language #
+export ODIN_ROOT="$HOME/Projects/odin/Odin"
+
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
