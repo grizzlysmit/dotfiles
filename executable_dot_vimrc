@@ -149,6 +149,9 @@ Plugin 'grizzlysmit/cpp2.vim'
 " odin formating
 Plugin 'Tetralux/odin.vim'
 
+" c3 programming languaue    
+Plugin 'c3-BachirChihani/vim-c3'
+
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
 
