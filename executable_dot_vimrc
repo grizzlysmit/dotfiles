@@ -150,7 +150,9 @@ Plugin 'grizzlysmit/cpp2.vim'
 Plugin 'Tetralux/odin.vim'
 
 " c3 programming languaue    
-Plugin 'albachir/vim-c3'
+"Plugin 'albachir/vim-c3'
+
+Plugin 'Airbus5717/c3.vim'
 
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
