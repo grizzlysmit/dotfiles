@@ -139,7 +139,7 @@ Plugin 'laher/fuzzymenu.vim'
 Plugin 'soywod/iris.vim'
 
 "  clang format
-Plugin 'rhysd/vim-clang-format'Airbus5717/c3.vim
+Plugin 'rhysd/vim-clang-format'
 
 Plugin 'kana/vim-operator-user'
 
@@ -658,7 +658,6 @@ inoremap , ,<space>
 nmap <silent> <C-space> <Plug>(Fzm)
 vmap <silent> <C-space> <Plug>(FzmVisual)
 
-set langmenu=en_au
 set spelllang=en_au
 
 "Forms example menus etc in terminal etc
