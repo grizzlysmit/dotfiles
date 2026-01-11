@@ -658,10 +658,5 @@ set spelllang=en_au
 
 if !has("gui_running")
     set mouse=a
-    source $VIMRUNTIME/menu.vim
-    set wildmenu
-    set cpoptions-=<
-    set wildcharm=<C-Z>
-    map <F4> :emenu <C-Z>
 endif
 " vim: :set filetype=vim :autoindent
