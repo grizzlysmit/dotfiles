@@ -139,7 +139,7 @@ Plugin 'laher/fuzzymenu.vim'
 Plugin 'soywod/iris.vim'
 
 "  clang format
-Plugin 'rhysd/vim-clang-format'
+Plugin 'rhysd/vim-clang-format'Airbus5717/c3.vim
 
 Plugin 'kana/vim-operator-user'
 
@@ -153,6 +153,8 @@ Plugin 'Tetralux/odin.vim'
 "Plugin 'albachir/vim-c3'
 
 Plugin 'Airbus5717/c3.vim'
+
+Plugin 'megaannum/forms'
 
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
