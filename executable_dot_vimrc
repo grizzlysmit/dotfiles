@@ -154,7 +154,9 @@ Plugin 'Tetralux/odin.vim'
 
 Plugin 'Airbus5717/c3.vim'
 
-Plugin 'megaannum/forms'
+
+
+"Plugin 'megaannum/forms'
 
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
@@ -656,6 +658,7 @@ inoremap , ,<space>
 nmap <silent> <C-space> <Plug>(Fzm)
 vmap <silent> <C-space> <Plug>(FzmVisual)
 
+set langmenu=en_au
 set spelllang=en_au
 
 "Forms example menus etc in terminal etc
