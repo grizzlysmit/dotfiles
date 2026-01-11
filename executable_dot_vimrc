@@ -656,4 +656,5 @@ vmap <silent> <C-space> <Plug>(FzmVisual)
 
 set spelllang=en_au
 
+set mouse=a
 " vim: :set filetype=vim :autoindent
