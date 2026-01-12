@@ -660,13 +660,6 @@ vmap <silent> <C-space> <Plug>(FzmVisual)
 
 set spelllang=en_au
 
-"Forms example menus etc in terminal etc
-nmap <Leader>m :call forms#menu#MakeMenu('n')<CR>
-vmap <Leader>m :call forms#menu#MakeMenu('v')<CR>
-nmap <Leader>p :call forms#menu#MakePopUp('n')<CR>
-vmap <Leader>p :call forms#menu#MakePopUp('v')<CR>
-nmap <Leader>d :call forms#example#demo#Make()<CR>
-
 
 if !has("gui_running")
     set mouse=a
