@@ -157,7 +157,7 @@ Plugin 'Airbus5717/c3.vim'
 
 
 " 'skywind3000/vim-quickui'
-Plugin 'skywind3000/vim-quickui'
+"Plugin 'skywind3000/vim-quickui'
 
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
@@ -664,8 +664,8 @@ set spelllang=en_au
 
 
 if !has("gui_running")
-    call quickui#menu#open('system')
-    let g:quickui_color_scheme = 'gruvbox'
-    "set mouse=a
+    "call quickui#menu#open('system')
+    "let g:quickui_color_scheme = 'gruvbox'
+    set mouse=a
 endif
 " vim: :set filetype=vim :autoindent
