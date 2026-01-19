@@ -665,6 +665,7 @@ set spelllang=en_au
 
 if !has("gui_running")
     set mouse=a
-    quickui#menu#open()
+    call quickui#menu#open('system')
+    tab sball
 endif
 " vim: :set filetype=vim :autoindent
