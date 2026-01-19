@@ -664,8 +664,8 @@ set spelllang=en_au
 
 
 if !has("gui_running")
-    set mouse=a
     call quickui#menu#open('system')
-    tab sball
+    let g:quickui_color_scheme = 'gruvbox'
+    set mouse=a
 endif
 " vim: :set filetype=vim :autoindent
