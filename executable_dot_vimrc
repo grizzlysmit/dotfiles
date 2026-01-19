@@ -156,7 +156,8 @@ Plugin 'Airbus5717/c3.vim'
 
 
 
-"Plugin 'megaannum/forms'
+" 'skywind3000/vim-quickui'
+Plugin ''skywind3000/vim-quickui''
 
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
