@@ -157,7 +157,7 @@ Plugin 'Airbus5717/c3.vim'
 
 
 " 'skywind3000/vim-quickui'
-Plugin ''skywind3000/vim-quickui''
+Plugin 'skywind3000/vim-quickui'
 
 "Plugin 'paniash/abook.vim'
 "Plugin 'dcbaker/vim-abook'
