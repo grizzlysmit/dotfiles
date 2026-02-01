@@ -1,5 +1,5 @@
 " vim: :set filetype=vim :autoindent
-set tabpagemax=15
+set tabpagemax=18
 
 " get rid of stupid Print button on toolbar
 " I only ever hit it by accident and then it prints
