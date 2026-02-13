@@ -154,6 +154,8 @@ Plugin 'Tetralux/odin.vim'
 
 Plugin 'Airbus5717/c3.vim'
 
+" commenting plugin
+Plugin 'xmready/vim-comentador'
 
 
 " 'skywind3000/vim-quickui'
