@@ -5,7 +5,7 @@ set tabpagemax=18
 " I only ever hit it by accident and then it prints
 " the entire file, no way to stop it.
 " yay it works no print button.
-aunmenu ToolBar.Print
+" aunmenu ToolBar.Print
 
 amenu Tools.Open\ NERDTree :NERDTree<cr>
 tmenu Tools.Open\ NERDTree Open NERDTree
