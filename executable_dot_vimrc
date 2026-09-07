@@ -264,6 +264,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:ycm_register_as_syntastic_checker=0
 " let g:ycm_filepath_completion_use_working_dir=1
+let g:ycm_enable_diagnostic_signs  = 1
 
 " vim-airline
 " let g:airline#extensions#tabline#enabled = 1
