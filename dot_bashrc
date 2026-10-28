@@ -148,18 +148,18 @@ export PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/share/pk
 export GOROOT=$HOME/go
 export GOARCH=amd64
 export GOOS=linux
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/lib:/usr/lib:/usr/local/lib:/usr/lib/gcc/i486-linux-gnu/4.4.1:/usr/lib/gcc/i486-linux-gnu"
-#if [ x$MANPATH == x ]
-#then
-#    export MANPATH=/usr/local/mercury-14.01/man
-#else
-#    export MANPATH=$MANPATH:/usr/local/mercury-14.01/man
-#fi
+export LD_LIBRARY_PATH="$HOME/lib:$LD_LIBRARY_PATH:/lib:/usr/lib:/usr/local/lib:/usr/lib/gcc/i486-linux-gnu/4.4.1:/usr/lib/gcc/i486-linux-gnu"
+if [ x$MANPATH == x ]
+then
+    export MANPATH="$HOME/man"
+else
+    export MANPATH="$HOME/man:$MANPATH"
+fi
 if [ -z "$INFOPATH" ]
 then
-    export INFOPATH=/usr/local/share/info:/usr/local/mercury-DEV/share/info
+    export INFOPATH=$HOME/info:/usr/local/share/info:/usr/local/mercury-DEV/share/info
 else
-    export INFOPATH=$INFOPATH:/usr/local/share/info:/usr/local/mercury-DEV/share/info
+    export INFOPATH=$HOME/info:$INFOPATH:/usr/local/share/info:/usr/local/mercury-DEV/share/info
 fi
 #export PYTHONPATH=/usr/lib:/usr/local/lib/python3.1/dist-packages/
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
