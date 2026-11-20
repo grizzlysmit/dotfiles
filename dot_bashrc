@@ -80,7 +80,7 @@ alias graphics="man netpbm"
 alias es="es -l"
 unalias ll
 alias lg="ls -Flahi"
-#alias eb="exa -FlaahigHb  --colour-scale --time-style=full-iso" defined in ~/.goto_bash_aliases
+#alias eb="exa -FlaahigHb  --color-scale --time-style=full-iso" defined in ~/.goto_bash_aliases
 alias eg="exa -F -laahigH   --color-scale --time-style=full-iso"
 alias tb="exa -F -lahigHTb  --color-scale --time-style=full-iso"
 alias tg="exa -F -lahigHT   --color-scale --time-style=full-iso"
@@ -345,7 +345,7 @@ function clr(){
     ncal -C "$@"
 }
 
-export LS_CMD="exa -F -laahigHb --colour-scale --time-style=full-iso --icons=always"
+export LS_CMD="exa -F -laahigHb --color-scale --time-style=full-iso --icons=always"
 
 export MOZ_ENABLE_WAYLAND=1
 
